@@ -1,0 +1,17 @@
+Meeting Minutes for 4/27/18
+
+Meeting Attendance:
+Greg Anto M, Areal Shevah, Kyle Krause, Kok Hao Yong
+
+Meeting goals:
+divide junit tests
+discuss whats left to be done in 3 person game
+
+Completed:
+minor changes addressed during meeting:
+    color of text on green turn
+    fixed pass button during 3 person game
+
+To be done after meeting:
+each person does their assigned junit tests
+cleanup of methods

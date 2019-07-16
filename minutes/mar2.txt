@@ -1,0 +1,15 @@
+Meeting Minutes for 2/16/18
+
+Meeting Attendance:
+Greg Anto M, Areal Shevah, Kyle Krause, Kok Hao Yong
+
+Tasks Completed:
+last method and bugs 
+
+Tasks Worked Upon:
+
+Goals For Next Meeting:
+submit project finalize javadocs and tests.txt file
+
+Schedule:
+n/a 

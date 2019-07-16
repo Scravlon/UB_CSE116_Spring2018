@@ -1,0 +1,16 @@
+Meeting Minutes for 2/16/18
+
+Meeting Attendance:
+Greg Anto M, Areal Sheva, Kyle Krause, Kok Hao Yong
+
+Tasks Completed:
+wrote up methods and corresponding test files (except one)
+
+Tasks Worked Upon:
+
+Goals For Next Meeting:
+iron out bugs and finish last method
+
+Schedule:
+Friday 10 AM - 12 PM 
+	(Both pairs)

@@ -1,0 +1,15 @@
+Meeting Minutes for 2/16/18
+
+Meeting Attendance:
+Greg Anto M, Areal Sheva, Kyle Krause, Kok Hao Yong
+
+Tasks Completed:
+
+Tasks Worked Upon:
+
+Goals For Next Meeting:
+Set up classes and some methods
+-Board Class, Person Class
+
+Schedule:
+To be made

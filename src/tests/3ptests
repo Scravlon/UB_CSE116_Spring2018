@@ -1,0 +1,17 @@
+check3rotation:
+    sets the teamlose variable to each team and uses the update team method to switch to the next teams turn.
+    checks that the team that has lost does not go again in the current game, and that the other teams remaining
+    alternate turns.
+    
+check3winassassin:
+	sets up a new game and board with three players, and finds the indexes of the two assassins.
+	checks that when the first assassin is revealed, the game continues and the team that revealed the assassin
+	loses. then checks that when the second assassin is revealed, the game ends and the team that is left wins.
+	
+check3assignments:
+	sets up a new game and a new board with three players. Loop through the location person's role and check if there are 
+	6 Red agents, 5 Blue agents, 5 Green agents, 7 Innocent Bystanders and 2 Assassins. 
+	
+check3boardwin:
+	sets up a new game and board with three players. tests different cases in which teams should win with 0 agents left.
+	cases when green agents = 0, red agents = 0, blue agents = 0, and assassins revealed.

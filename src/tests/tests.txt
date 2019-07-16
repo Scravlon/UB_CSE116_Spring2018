@@ -1,0 +1,177 @@
+Game class
+
+	/**
+	 *  constructs Game instance to run the game
+	 */
+	public Game() {
+	
+	/**
+	 * Sets up board and initialized the 25 locations in board with a person, codename and sets isRevealed to false
+	 * @param board where the game is being played
+	 */
+	public void setUp(Board board){
+	
+	/**
+	 * Tells whether move isLegal if codename of non-revealed character is used as a clue 
+	 * @param clue the clue being used
+	 * @return boolean isLegal true if legal, false if not
+	 */
+	public boolean isLegal(String clue){
+	
+	/**
+	 * To be called after every turn, to update the turn
+	 */
+	public void updateTurn(){
+	
+	/**Call this method at every end of a team's turn to check if the game ends
+	 * 
+	 * @return True when the game is still running, False when the game ends.
+	 */
+	public boolean CheckWin() {
+	
+	/**
+	 * 
+	 * @return Red if Red team won, Blue if Blue team won;
+	 */
+	public String TeamWon(){
+	
+	/**
+	 * 
+	 * @return Red if Red team loss, Blue if Blue team loss;
+	 */
+	public String TeamLoss(){
+	
+	/**
+	 * Remove one red Agent
+	 */
+	public void redRevealed() {
+	
+	/**
+	 * Remove one blue Agent
+	 */
+	public void blueRevealed() {
+	
+GameTester class
+
+	**Tests setup to make sure the 25 locations of the array are filled with a codename and person, and isRevealed is set to false
+	 * -Ariel
+	 */
+	@Test
+	public void checkSetUp(){
+	
+	/**	Tests if isLegal returns legal moves true and illegal false
+	 * 	-Ariel
+	 */
+	@Test
+	public void checkLegal() {
+	
+	/**
+	 * checks if update turn correctly switches the turn from red to blue and back
+	 */
+	@Test
+	public void checkUpdate() {
+	
+	/**
+	 * Yong 
+	 * checks if teamWon returns that the correct team won
+	 */
+	@Test
+	public void checkWin() {
+	
+	/**
+	 * Yong
+	 * Checks if the correct team loses 
+	 */
+	@Test
+	public void checkLoss() {
+	
+Board class
+
+	/**
+	 * creates and instantiates the board with 25 locations and random codenames
+	 */
+	public void setUpBoard() {
+	
+	/**
+	 * reads gamewords.txt and stores into arraylist codenames
+	 * @return ArrayList<String> containing codenames
+	 */
+	public ArrayList<String> readCodenames() {
+	
+	/**
+	 * Selects 25 distinct codenames at random from a list of codenames.
+	 * 
+	 * @return ArrayList<String> of 25 distinct codenames 
+	 */
+	public ArrayList<String> createRandomCodenames() {
+	
+	/**
+	 *  Creates a List of 25 role assignments (9 Red Agents, 8 Blue Agents, 7 Innocent Bystanders, and 1 Assassin) in random order.
+	 *  Ex. { Red Agent, Blue Agent, Assassin, Red Agent, Innocent Bystander, ... , Blue Agent }
+	 *  
+	 * @return ArrayList<Person> of 25 randomly ordered Person objects with role assignments
+	 */
+	public ArrayList<Person> createRandomAssignments() {
+	
+BoardTester class
+	
+	/**
+	 * checks that setUpBoard class was correctly instantiated
+	 */
+	@Test
+	public void checkBoard() {
+	
+	/**
+	 * Checks that codenames were read correctly
+	 */
+	@Test
+	public void checkCodename() {
+	
+	/**
+	 * Greg - compares two randomly generated codename lists to each other
+	 *		 to assert that they are not the same or not in the same order
+	 *		 runs 100 checks
+	 */
+	@Test
+	public void checkRandom() {
+	
+	/**
+	 * Greg - compares two randomly ordered role lists to each other
+	 *		 to assert that they are not in the same order (not same)
+	 *		 runs 100 checks
+	*/
+	@Test
+	public void checkAssignment() {
+	
+Location class
+
+	/**
+	 * constructor sets codeName, Person, and isRevealed
+	 * @param codename
+	 * @param person
+	 * @param isRevealed
+	 */
+	public Location(String codename, Person person, boolean isRevealed){
+	
+	/**
+	 * simple toString for printing out location
+	 */
+	 
+Person class
+
+ 	/**
+     * default constructor sets revealed to false
+     */
+    public Person()	{
+    
+    /**
+     * sets role of person within constructor as well
+     * @param role
+     */
+    public Person(String role) {
+    
+    /**
+     * Returns the state of the Person, true when is revealed, false when it is not.
+     * @return true if the person is revealed, false if the person is not
+     */
+    public boolean getRevealed() {
